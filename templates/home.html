@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+<title>Text Summarizer</title>
+<link rel="shortcut icon" type="image/png" href="static/icon.png">
+<style>
+#header{
+font-size:60px;
+font-family:Brush Script MT ;
+color:#03fcf8;
+}
+#button{
+text-align:center;
+margin-left:660px;
+height:50px;
+width:200px;
+margin-top:20px;
+}
+#form{
+height:200px;
+width: 300px;
+}
+#date{
+height:50px;
+width: 300px;
+}
+input[type="submit"]{
+height:50px;
+width: 120px;
+font-size:25px;
+}
+#textarea2{
+    display: table-cell;
+    align-items: center;
+    justify-content: center;
+    vertical-align:center;
+}
+.btn {
+  background-color: DodgerBlue;
+    align:center;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+.center {
+  margin:auto;
+  display: block;
+  text-align: center;
+  margin-left: 400px;
+  font-size:30px;
+}
+#homebutton{
+margin-top:300px;
+margin-left:715px;
+}
+</style>
+    <body background="static/new.png">
+    <h1 id = "header" style="text-align:center;">Welcome to  Text Summarizer </h1>
+    <div>
+
+            <br>
+
+        <form id = "form" method="POST" style="text-align:center;", action="{{url_for('home')}}">
+            <textarea rows="10" cols="40"  class = "center" id ="textarea2" type="text" name = 'a' placeholder="Enter text to get summary"></textarea>
+            <input id="button" type="submit" , value='Get Summary!'/> >
+        </form>
+    </div>
+    <div id = "homebutton">
+<a href="http://127.0.0.1:5000/" class="btn"><i class="fa fa-home"></i> Home</a>
+    </div>
+    </body>
+</html>

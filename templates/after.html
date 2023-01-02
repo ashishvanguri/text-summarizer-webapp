@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+<title>Text Summarizer</title>
+<link rel="shortcut icon" type="image/png" href="static/icon.png">
+<style>
+#header{
+font-size:60px;
+font-family:Brush Script MT ;
+color:#03fcf8;
+}
+#header2{
+font-size:30px;
+font-family: "Comic Sans MS", cursive, sans-serif;
+color:#d1f0ef;
+margin-top:150px;
+text-align:center;
+}
+#output{
+font-size:40px;
+font-family: "Comic Sans MS", cursive, sans-serif;
+font-weight:bold;
+color:#bfc7c7;
+margin-top:20px;
+text-align:center;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+#homebutton{
+margin-top:10px;
+margin-left:715px;
+}
+
+
+</style>
+    <body background="static/new2.png">
+    <h1 id = "header" style="text-align:center;">Welcome to  Text Summarizer </h1>
+
+    <h1 id = "header2" > Input Text :<br> {{text}}</h1>
+    <h2 id ="output">Summary : {{pred}}</h2>
+    <div id ="homebutton">
+    <a href="http://127.0.0.1:5000/" class="btn"><i class="fa fa-home"></i> Home</a>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
